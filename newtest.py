@@ -1,12 +1,20 @@
-#/usr/bin/python2.7
+#!/usr/bin/python2.7
+
+import yaml
+
 
 a=10
 
-def test ():
+
+def test (num):
+
     global a
-    a=a+10
+    a=a+num
     print a
 
-test()
+test(10)
+test(5)
+print a + 10
 
-print a
+
+
